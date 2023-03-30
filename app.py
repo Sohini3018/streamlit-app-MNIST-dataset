@@ -56,10 +56,10 @@ if ok:
 
     y_train = y_train.astype(int)
     y_test = y_test.astype(int)
-    y_train_2 = (y_train == y_train_label)
-    y_test_2 = (y_test == y_train_label)
+    y_train_7 = (y_train == y_train_label)
+    y_test_7 = (y_test == y_train_label)
 
-    clf.fit(x_train, y_train_2)
+    clf.fit(x_train, y_train_7)
 
     res = clf.predict([some_digit])
-    st.subheader(f"The given image is predicted to be a digit {res[0]}")
+    st.subheader(f"Your response is predicted to be {res[0]}")
